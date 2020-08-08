@@ -15,6 +15,4 @@ app.use('*', (req, res) => {
   res.status(404).send({ message: 'Запрашиваемый ресурс не найден' });
 });
 
-app.listen(PORT, () => {
-  console.log('App is listening to port ', PORT);
-});
+app.listen(PORT);
