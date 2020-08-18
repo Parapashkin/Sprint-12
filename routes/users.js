@@ -19,7 +19,7 @@ usersRouter.get('/', (req, res) => {
 
 usersRouter.get('/:id', (req, res) => {
   fs.readFile(filepath, { encoding: 'utf8' })
-    .then((data) => JSON.parse(data).find((user) => user.id === req.params.id))
+    .then((data) => JSON.parse(data).find((user) => user._id === req.params.id))
     .then((data) => {
       if (data) {
         res.send(data);

@@ -17,10 +17,11 @@
     "eslint": "^7.6.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",
+    "mongoose": "^5.10.0",
     "nodemon": "^2.0.4"
   },
   "dependencies": {
-    "path": "^0.12.7",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "path": "^0.12.7"
   }
 }

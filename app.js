@@ -1,9 +1,16 @@
 const express = require('express');
 const path = require('path');
+const mongoose = require('mongoose');
 const cardsRouter = require('./routes/cards.js');
 const usersRouter = require('./routes/users.js');
 
 const { PORT = 3000 } = process.env;
+
+mongoose.connect('mongodb://localhost:27017/mynewdb', {
+  useNewUrlParser: true,
+  useCreateIndex: true,
+  useFindAndModify: false
+});
 
 const app = express();
 
