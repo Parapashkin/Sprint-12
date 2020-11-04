@@ -1,15 +1,4 @@
 {
-    "env": {
-        "browser": true,
-        "es2020": true
-    },
-    "extends": [
-        "airbnb-base"
-    ],
-    "parserOptions": {
-        "ecmaVersion": 11,
-        "sourceType": "module"
-    },
-    "rules": {
-    }
+  "extends": "airbnb-base",
+  "rule": {"no-underscore-dangle":  ["error", { "allow": ["_place"] }]}
 }
